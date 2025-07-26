@@ -2,26 +2,49 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Portfólio</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; }
-    h1 { color: #2c3e50; }
-    a { color: #2980b9; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Matheus Henrique Alves</title>
+  <!-- link para o CSS externo -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Olá, eu sou [Seu Nome] 👋</h1>
-  <p>Sou um Analista de Dados com experiência em Python, SQL, Power BI e Machine Learning.</p>
+  <header class="container">
+    <h1>Olá, eu sou Matheus Henrique Alves 👋</h1>
+    <p>Analista de Dados | Python · SQL · Power BI · Machine Learning</p>
+    <a href="Matheus_Henrique_Alves_CV.pdf" class="btn" download>Download do meu CV</a>
+  </header>
 
-  <h2>Projetos</h2>
-  <ul>
-    <li><a href="https://github.com/seunome/projeto1">Análise de Vendas no Power BI</a></li>
-    <li><a href="https://github.com/seunome/projeto2">Predição de churn em Python</a></li>
-    <li><a href="https://github.com/seunome/projeto3">Dashboard interativo com Streamlit</a></li>
-  </ul>
+  <main class="container">
+    <section id="projetos">
+      <h2>Projetos Destaque</h2>
+      <div class="projects">
+        <div class="project-card">
+          <a href="https://github.com/seunome/projeto1" target="_blank">Análise de Vendas no Power BI</a>
+          <p>Visualização de KPIs de vendas e insights de performance usando DAX e relatórios interativos.</p>
+        </div>
+        <div class="project-card">
+          <a href="https://github.com/seunome/projeto2" target="_blank">Predição de Churn em Python</a>
+          <p>Modelo de Machine Learning para identificar clientes com risco de churn, utilizando scikit‑learn e XGBoost.</p>
+        </div>
+        <div class="project-card">
+          <a href="https://github.com/seunome/projeto3" target="_blank">Dashboard Interativo com Streamlit</a>
+          <p>Aplicativo web para explorar dados em tempo real, filtros dinâmicos e exportação de relatórios.</p>
+        </div>
+      </div>
+    </section>
 
-  <h2>Contato</h2>
-  <p>Email: seu@email.com</p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/seulinkedin">seulinkedin</a></p>
+    <section id="contato">
+      <h2>Como Me Encontrar</h2>
+      <ul class="contact-info">
+        <li>Email: <a href="mailto:matheus.alves.dados@gmail.com">matheus.alves.dados@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/matheushalves" target="_blank">linkedin.com/in/matheushalves</a></li>
+        <li>GitHub: <a href="https://github.com/seunome" target="_blank">github.com/seunome</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Matheus Henrique Alves. Feito com ❤️ e café.
+  </footer>
 </body>
 </html>
