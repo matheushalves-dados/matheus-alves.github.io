@@ -121,3 +121,64 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
+/* Hero escuro em duas colunas */
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 5%;
+  background-color: #000;
+  background-image: url('path/para/seu-background.jpg'); /* opcional */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  color: #fff;
+}
+.hero-overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.hero-col {
+  position: relative;
+  z-index: 2;
+}
+.hero-left {
+  /* você pode ajustar padding para alinhar mais à esquerda */
+}
+.hero-title {
+  font-size: clamp(2rem, 8vw, 6rem);
+  line-height: 1.1;
+  font-weight: 700;
+  margin: 0;
+}
+.accent-line {
+  width: 40px;
+  height: 4px;
+  background-color: var(--primary); /* certifique-se que --primary é seu roxo */
+  margin-bottom: 1rem;
+}
+.hero-copy {
+  max-width: 400px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.btn-hero {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background var(--transition), transform var(--transition);
+}
+.btn-hero:hover {
+  background-color: var(--secondary);
+  transform: translateX(5px);
+}
