@@ -1,60 +1,70 @@
-/* Variáveis de cor e espaçamento */
 :root {
-  --primary: #2980b9;
-  --secondary: #2c3e50;
-  --light-bg: #f4f7f8;
-  --white: #ffffff;
+  --primary: #A100FF;       /* Roxo Accenture */
+  --secondary: #000000;     /* Preto */
+  --light-bg: #F2F2F2;      /* Cinza claro */
+  --white: #FFFFFF;
   --radius: 8px;
   --transition: 0.3s ease;
 }
+
 /* Reset e box-sizing */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: var(--light-bg);
   color: var(--secondary);
   line-height: 1.6;
 }
+
 a {
   color: var(--primary);
   text-decoration: none;
   transition: color var(--transition);
 }
+
 a:hover {
-  color: var(--secondary);
+  color: #5E00B9; /* Um roxo mais escuro para hover */
 }
+
 img {
   max-width: 100%;
   display: block;
 }
+
 .container {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 0;
 }
+
 /* Header */
 header {
   text-align: center;
   padding: 4rem 0 2rem;
 }
+
 header h1 {
   font-size: 2.8rem;
   color: var(--secondary);
   margin-bottom: 0.5rem;
 }
+
 header p {
   font-size: 1.2rem;
-  color: #555;
+  color: #333;
 }
+
 /* Seções */
 section {
   margin-bottom: 3rem;
 }
+
 section h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -62,12 +72,14 @@ section h2 {
   display: inline-block;
   padding-bottom: 0.3rem;
 }
+
 /* Projetos em grid */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
+
 .project-card {
   background-color: var(--white);
   border-radius: var(--radius);
@@ -75,19 +87,23 @@ section h2 {
   padding: 1.5rem;
   transition: transform var(--transition), box-shadow var(--transition);
 }
+
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
+
 .project-card a {
   font-size: 1.1rem;
   font-weight: bold;
 }
+
 .project-card p {
   margin-top: 0.5rem;
   font-size: 0.95rem;
   color: #666;
 }
+
 /* Botão de download de CV */
 .btn {
   display: inline-block;
@@ -98,22 +114,29 @@ section h2 {
   border: none;
   border-radius: var(--radius);
   cursor: pointer;
-  transition: background-color var(--transition);
+  font-weight: bold;
+  transition: background-color var(--transition), transform var(--transition);
 }
+
 .btn:hover {
-  background-color: var(--secondary);
+  background-color: #5E00B9;
+  transform: translateY(-2px);
 }
+
 /* Contato */
 .contact-info {
   list-style: none;
   margin-top: 1rem;
 }
+
 .contact-info li {
   margin-bottom: 0.6rem;
 }
+
 .contact-info a {
-  word-break: break-all;
+  word-break: break-word;
 }
+
 /* Footer */
 footer {
   text-align: center;
@@ -121,6 +144,7 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
+
 /* Hero escuro em duas colunas */
 .hero {
   position: relative;
@@ -136,6 +160,7 @@ footer {
   overflow: hidden;
   color: #fff;
 }
+
 .hero-overlay {
   content: "";
   position: absolute;
@@ -143,31 +168,33 @@ footer {
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
+
 .hero-col {
   position: relative;
   z-index: 2;
 }
-.hero-left {
-  /* você pode ajustar padding para alinhar mais à esquerda */
-}
+
 .hero-title {
   font-size: clamp(2rem, 8vw, 6rem);
   line-height: 1.1;
   font-weight: 700;
   margin: 0;
 }
+
 .accent-line {
   width: 40px;
   height: 4px;
-  background-color: var(--primary); /* certifique-se que --primary é seu roxo */
+  background-color: var(--primary);
   margin-bottom: 1rem;
 }
+
 .hero-copy {
   max-width: 400px;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   font-size: 1rem;
 }
+
 .btn-hero {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -178,7 +205,8 @@ footer {
   font-weight: 600;
   transition: background var(--transition), transform var(--transition);
 }
+
 .btn-hero:hover {
-  background-color: var(--secondary);
+  background-color: #5E00B9;
   transform: translateX(5px);
 }
