@@ -402,11 +402,6 @@ footer {
   animation: fadeSlideUp 0.8s ease forwards;
 }
 
-
-.hero.animate-on-scroll {
-  animation-delay: 0s;
-}
-
 .projects.animate-on-scroll {
   animation-delay: 0.2s;
 }
