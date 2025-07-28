@@ -5,40 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio | Matheus Henrique Alves</title>
   <!-- favicon em PNG -->
-  <link rel="icon" type="image/png" sizes="32x32" href="icone.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icone.png">
   <!-- seu CSS externo -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <nav class="navbar">
+  <div class="navbar-container">
+    <a href="#inicio" class="logo">Matheus Alves</a>
+    <ul class="nav-links">
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="Matheus_Henrique_Alves_CV.pdf" download>CV</a></li>
+    </ul>
+  </div>
+  </nav>
 
   <!-- Hero escuro -->
+  <section class="hero animate-on-scroll">
   <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-col hero-left">
-      <h1 class="hero-title">
-        Olá,<br>
-        eu sou Matheus Henrique Alves 👋
-      </h1>
-    </div>
-    <div class="hero-col hero-right">
-      <div class="accent-line"></div>
-      <p class="hero-copy">
-      Bem-vindo ao meu portfólio! Aqui você vai encontrar meus principais projetos em Análise de Dados: da extração e modelagem de dados em SQL, passando por dashboards interativos em Power BI e Streamlit, até soluções de Machine Learning em Python que geram insights acionáveis. Cada case mostra minha paixão por contar histórias com dados, otimizar processos e ajudar empresas a tomarem decisões mais inteligentes. Explore e descubra como posso transformar desafios complexos em resultados mensuráveis.
-      </p>
-      <a href="#projetos" class="btn btn-hero">Saiba mais →</a>
-    </div>
-  </section>
+  <div class="hero-left">
+    <h1 class="hero-title">
+      Matheus<br>Alves
+    </h1>
+    <p class="hero-subtitle">
+      Engenheiro de Dados na Accenture<br>
+      Especialista em Analytics, Pipelines e Machine Learning
+    </p>
+    <p class="hero-skills">
+      Python · SQL · Airflow · Spark · Power BI · DBT · Git · Storytelling · Machine Learning
+    </p>
+    <a href="Matheus_Henrique_Alves_CV.pdf" class="btn" download>Download do meu CV</a>
+  </div>
+<div class="hero-right">
+  <img src="imgs/foto.png" alt="Matheus Henrique Alves" class="hero-img">
 
+  <div class="hero-icons">
+    <a href="https://www.linkedin.com/in/matheushalves" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+      <img src="icons/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/matheushalves-dados" target="_blank" aria-label="GitHub" title="GitHub">
+      <img src="icons/github.png" alt="GitHub">
+    </a>
+    <a href="mailto:matheus.alves.dados@gmail.com" aria-label="E-mail" title="E-mail">
+      <img src="icons/mail.png" alt="E-mail">
+    </a>
+    <a href="https://www.kaggle.com/matheushalves" target="_blank" aria-label="Kaggle" title="Kaggle">
+      <img src="icons/kaggle.png" alt="Kaggle">
+    </a>
+  </div>
+</div>
+</section>
+
+  </section>
   <!-- Cabeçalho principal -->
   <header class="container">
-    <h1>Olá, eu sou Matheus Henrique Alves 👋</h1>
-    <p>Analista de Dados | Python · SQL · Power BI · Machine Learning</p>
-    <a href="Matheus_Henrique_Alves_CV.pdf" class="btn" download>Download do meu CV</a>
+    <h1>Veja alguns dos meus projetos:</h1>
   </header>
 
   <!-- Conteúdo principal -->
-  <main class="container">
-    <section id="projetos">
+  <main class="container"></main>  
+    <section id="projetos" class="animate-on-scroll">
       <h2>Projetos Destaque</h2>
       <div class="projects">
         <div class="project-card">
@@ -55,19 +82,24 @@
         </div>
       </div>
     </section>
-
-    <section id="contato">
-      <h2>Como Me Encontrar</h2>
-      <ul class="contact-info">
-        <li>Email: <a href="mailto:matheus.alves.dados@gmail.com">matheus.alves.dados@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/matheushalves" target="_blank">linkedin.com/in/matheushalves</a></li>
-        <li>GitHub: <a href="https://github.com/seunome" target="_blank">github.com/seunome</a></li>
-      </ul>
-    </section>
   </main>
+    <section id="contato" class="contact-section animate-on-scroll">
+      <div class="contact-container">
+        <h2>Contato</h2>
+        <form class="contact-form" action="mailto:matheus.alves.dados@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <input type="text" name="subject" placeholder="Assunto" required>
+          <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
 
   <footer class="container">
-    &copy; 2025 Matheus Henrique Alves. Feito com ❤️ e café.
+    &copy; 2025 Matheus Henrique Alves.
   </footer>
 
 </body>
